@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<h:form>
+		<p:dataTable value="#{fornecedoresBean.itens}" var="it">
+			<p:column headerText="codigo">
+			   <h:outputText value="#{it.codigo}"/>
+			</p:column>
+			<p:column headerText="descricao">
+			    <h:outputText value="#{it.descricao}"/>
+			</p:column>
+
+		</p:dataTable>
+
+	</h:form>
+
+</ui:composition>
